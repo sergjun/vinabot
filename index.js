@@ -140,6 +140,19 @@ client.on("message", msg => {
   }
 })
 
+client.on("message", msg => { 
+  if (msg.content === "mona lisa") {
+    msg.reply("MONA LIIISA")
+  }
+})
+
+
+client.on("message", msg => { 
+  if (msg.content === "MONA LIIISA") {
+    msg.reply("MONA LISAAA")
+  }
+})
+
 
 VinaAlive ()
 client.login(process.env.TOKEN)
