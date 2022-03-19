@@ -4,6 +4,8 @@ const VinaAlive = require("./server")
 
 const balds = ["bolinha", "Bolinha", "Bolis", "bolis", "Guigas", "GuigasCardas", "guigas", "guidascardas", "cardas", "gabre", "Gabre", "Moraes", "moraes", "rocha", "Rocha", "tuza", "Tuzao", "tuzoff", "Tuzoff"]
 
+const crimes = ["Artur", "artur", "amaral", "Artur do Amaral", "Amaral", "crimes", "Crimes", "guerra", "Guerra", "tuzao", "Tuzao", "Tuzon", "Tuzoff", "tuzoff", "tuzon"]
+
 const baldReply = ["ta calvo hein, pai" , ":person_bald:", "poca telha", "aeroporto de piolho", "ta calvo hein, pai :person_bald:", "oitenta anos e a cabeleira do pai nao caiu ainda", "amin khader", "ninho de aguia", ]
 
 const marriages = ["casamento", "Casamento", "CASAMENTO", "marriage", "Marriage"]
@@ -33,6 +35,12 @@ const serjoTomari = ["Serjo", "serginho", "Serginho", "sergio", "Sergio", "haku"
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
+
+client.on("message", msg => {
+  if (crimes.some(crime => msg.content.includes(crime))){
+    msg.reply("Antes que eu me esqueça", {files: ["https://imgur.com/a/YWCX0qb"]})
+  }  
+});
 
 client.on("message", msg => {
   if (balds.some(bald => msg.content.includes(bald))){
