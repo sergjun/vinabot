@@ -20,7 +20,7 @@ const charlieBrow = ["charlie brown jr", "Charlie Brown Jr", "CBJR"]
 
 const vinaOffenses = ["Vai tomar no cu Vina", "vai tomar no cu vina", "VAI TOMAR NO CU VINA"]
 
-const vasco = ["vasco", "VASCO", "Vasco", "da gama", "gama"]
+const vasco = ["vasco", "Vasco", "da gama", "gama"]
 
 const cecilia = ["cecilia", "CECILIA", "Cecilia", "cecis", "CECIS"]
 
